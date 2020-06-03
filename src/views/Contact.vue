@@ -10,7 +10,7 @@
             <br>
             <label>Email</label>
             <br>
-            <input v-model="email" @blur="verifyEmail" placeholder="Email address" type='email' name="user_email">
+            <input v-model="email" @blur="verifyEmail" type='email' name="user_email">
             <br>
             <span v-if="mailCheckedEmail" class='form--notice form--suggestEmail'>
               Did you mean <span @click="setEmail">{{ mailCheckedEmail }}</span>?
@@ -18,7 +18,7 @@
             <br>
             <label>Message</label>
             <br>
-            <textarea name="message"></textarea>
+            <textarea name="message" rows="10" cols="30"></textarea>
             <br>
             <input type="submit" value="Send">
           </div>
